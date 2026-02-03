@@ -1,0 +1,42 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Intelligent",
+  "Modify": {
+    "MaxHealth": 2000,
+    "ViewSector": 150,
+    "DropList": "Drop_Golem_Forgotten",
+    "Appearance": "Golem_Forgotten",
+    "Weapons": [],
+    "OffHand": [],
+    "MaxSpeed": 7,
+    "ViewRange": 10,
+    "WakingIdleBehaviorComponent": "Component_Instruction_Stationary_Idle",
+    "Attack": "Root_NPC_Golem_Forgotten_Attack",
+    "AttackDistance": 3,
+    "BlockProbability": 0,
+    "DesiredAttackDistanceRange": [
+      2,
+      2.6
+    ],
+    "CombatAttackPostDelay": [
+      1.0,
+      1.2
+    ],
+    "CombatBackOffAfterAttack": false,
+    "CombatRelativeTurnSpeed": 0.3,
+    "LeashDistance": 15,
+    "HardLeashDistance": 22,
+    "AttitudeGroup": "Golem",
+    "IsMemory": true,
+    "MemoriesCategory": "Elemental",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "server.npcRoles.Golem_Forgotten.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Golem_Forgotten_Spawner.name"
+  },
+  "Quality": "Legendary",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        {
+          "Type": "SpawnNPC",
+          "EntityId": "Golem_Forgotten",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": -1
+          },
+          "SpawnOffset": {
+            "X": 0,
+            "Y": 0.5,
+            "Z": 0
+          }
+        }
+      ]
+    }
+  },
+  "Model": "Items/Consumables/Food/Egg.blockymodel",
+  "Texture": "Items/Consumables/Food/Egg_White_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Food_Egg_White.png",
+  "MaxStack": 1,
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Workbench",
+        "Categories": [
+          "Workbench_Tinkering"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 100
+      },
+      {
+        "ItemId": "Ingredient_Fire_Essence",
+        "Quantity": 100
+      },
+      {
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Bar_Thorium",
+        "Quantity": 10
+      }
+    ],
+    "TimeSeconds": 3
+  }
+}

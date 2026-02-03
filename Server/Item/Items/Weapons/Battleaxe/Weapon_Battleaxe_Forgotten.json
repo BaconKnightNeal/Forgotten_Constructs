@@ -1,0 +1,211 @@
+{
+  "Parent": "Template_Weapon_Battleaxe",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Battleaxe_Forgotten.name"
+  },
+  "Model": "Items/Weapon/Battleaxe/Weapon_Battleaxe_Forgotten.blockymodel",
+  "Texture": "Items/Weapon/Battleaxe/Weapon_Battleaxe_Forgotten.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Battleaxe_Forgotten.png",
+  "Recipe": {
+    "TimeSeconds": 5,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Mithril",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Leather_Storm",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Battleaxe"
+        ],
+        "Id": "Weapon_Bench",
+        "RequiredTierLevel": 3
+      }
+    ]
+  },
+  "Quality": "Legendary",
+  "ItemLevel": 100,
+  "InteractionVars": {
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 73
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 44
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 57
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Signature_Whirlwind_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 27
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        "Golem_Forgotten_Swing_Left"
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 20,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 500,
+  "DurabilityLossOnHit": 0.45,
+  "Weapon": {
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 5
+        }
+      ]
+    },
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ]
+  },
+  "ItemAppearanceConditions": {
+    "SignatureEnergy": [
+      {
+        "Condition": [
+          100,
+          100
+        ],
+        "ConditionValueType": "Percent",
+        "Particles": [
+          {
+            "SystemId": "Sword_Signature_Ready",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.8
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Sword_Signature_Status_Spawn",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.5
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Sword_Signature_Status",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.5
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Smoke_Tall_Round_Black",
+            "Scale": 0.5,
+            "PositionOffset": {
+              "Y": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.22,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -70,
+      -69
+    ]
+  }
+}

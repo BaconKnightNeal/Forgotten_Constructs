@@ -1,0 +1,49 @@
+{
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Thorium",
+              "QuantityMin": 10,
+              "QuantityMax": 15
+            }
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Bar_Cobalt",
+              "QuantityMin": 10,
+              "QuantityMax": 15
+            }
+          }
+        ]
+      },
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Weapon_Battleaxe_Forgotten",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
