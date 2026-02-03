@@ -1,0 +1,14 @@
+All Rights Reserved.
+
+Copyright (c) 2026 BaconKnight
+
+The textures, models, animations, sounds, and all other non-code assets
+contained in this directory are NOT licensed under the MIT License.
+
+You may NOT:
+- Copy, extract, or reuse these assets
+- Modify or create derivative works from these assets
+- Redistribute these assets in any form
+- Use these assets in other mods, games, or projects
+
+These assets are licensed for use ONLY as part of this mod.
